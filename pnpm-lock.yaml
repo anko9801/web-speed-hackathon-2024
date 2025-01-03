@@ -123,9 +123,6 @@ importers:
       jotai:
         specifier: 2.7.0
         version: 2.7.0(@types/react@18.2.0)(react@18.2.0)
-      jquery:
-        specifier: 3.7.1
-        version: 3.7.1
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -163,9 +160,6 @@ importers:
         specifier: 3.22.4
         version: 3.22.4
     devDependencies:
-      '@types/jquery':
-        specifier: 3.5.29
-        version: 3.5.29
       '@types/react':
         specifier: 18.2.0
         version: 18.2.0
@@ -211,9 +205,6 @@ importers:
       jimp:
         specifier: 0.22.12
         version: 0.22.12
-      jquery:
-        specifier: 3.7.1
-        version: 3.7.1
       p-queue:
         specifier: 8.0.1
         version: 8.0.1
@@ -245,9 +236,6 @@ importers:
       '@types/jimp':
         specifier: 0.2.28
         version: 0.2.28
-      '@types/jquery':
-        specifier: 3.5.29
-        version: 3.5.29
       '@types/path-browserify':
         specifier: 1.0.2
         version: 1.0.2
@@ -2132,9 +2120,6 @@ packages:
     resolution: {integrity: sha512-nLIVbImtcaEf90y2XQsMzfgWK5EZxfDg6EVWobrkFTFJiLqmx/yU5Jh+LYUN94ztzXX1GwQLFYHaEi8tfMeZzw==}
     deprecated: This is a stub types definition for jimp (https://github.com/oliver-moran/jimp#readme). jimp provides its own type definitions, so you don't need @types/jimp installed!
 
-  '@types/jquery@3.5.29':
-    resolution: {integrity: sha512-oXQQC9X9MOPRrMhPHHOsXqeQDnWeCDT3PelUIg/Oy8FAbzSZtFHRjc7IpbfFVmpLtJ+UOoywpRsuO5Jxjybyeg==}
-
   '@types/js-cookie@2.2.7':
     resolution: {integrity: sha512-aLkWa0C0vO5b4Sr798E26QgOkss68Un0bLjs7u9qxzPT5CG+8DuNTffWES58YzJs3hrVAOs1wonycqEBqNJubA==}
 
@@ -2206,9 +2191,6 @@ packages:
 
   '@types/serviceworker@0.0.83':
     resolution: {integrity: sha512-EwzwfDMIWyo0ulkbLm4KrnnHBSJ9PmnPQCk1nM3tmTMl9lTJsldx9ZGPq4J1ZD2yroMQ8vzUf7FNlWgvfpN/jw==}
-
-  '@types/sizzle@2.3.8':
-    resolution: {integrity: sha512-0vWLNK2D5MT9dg0iOo8GlKguPAU02QjmZitPEsXRuJXU/OGIOt9vT9Fc26wtYuavLxtO45v9PGleoL9Z0k1LHg==}
 
   '@types/stats.js@0.17.3':
     resolution: {integrity: sha512-pXNfAD3KHOdif9EQXZ9deK82HVNaXP5ZIF5RP2QG6OQFNTaY2YIetfrE9t528vEreGQvEPRDDc8muaoYeK0SxQ==}
@@ -3792,9 +3774,6 @@ packages:
 
   jpeg-js@0.4.4:
     resolution: {integrity: sha512-WZzeDOEtTOBK4Mdsar0IqEU5sMr3vSV2RqkAIzUEV2BHnUfKGyswWFPFwK5EeDo93K3FohSHbLAjj0s1Wzd+dg==}
-
-  jquery@3.7.1:
-    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
 
   js-cookie@2.2.1:
     resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
@@ -7348,10 +7327,6 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@types/jquery@3.5.29':
-    dependencies:
-      '@types/sizzle': 2.3.8
-
   '@types/js-cookie@2.2.7': {}
 
   '@types/jsesc@3.0.3': {}
@@ -7414,8 +7389,6 @@ snapshots:
   '@types/semver@7.5.6': {}
 
   '@types/serviceworker@0.0.83': {}
-
-  '@types/sizzle@2.3.8': {}
 
   '@types/stats.js@0.17.3': {}
 
@@ -9387,8 +9360,6 @@ snapshots:
   joycon@3.1.1: {}
 
   jpeg-js@0.4.4: {}
-
-  jquery@3.7.1: {}
 
   js-cookie@2.2.1: {}
 
