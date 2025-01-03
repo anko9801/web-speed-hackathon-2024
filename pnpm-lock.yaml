@@ -80,9 +80,6 @@ importers:
       regexparam:
         specifier: 3.0.0
         version: 3.0.0
-      underscore:
-        specifier: 1.13.6
-        version: 1.13.6
       unicode-collation-algorithm2:
         specifier: 0.5.0
         version: 0.5.0
@@ -99,9 +96,6 @@ importers:
       '@types/react-dom':
         specifier: 18.2.1
         version: 18.2.1
-      '@types/underscore':
-        specifier: 1.11.15
-        version: 1.11.15
 
   workspaces/app:
     dependencies:
@@ -2227,9 +2221,6 @@ packages:
 
   '@types/three@0.162.0':
     resolution: {integrity: sha512-0j5yZcVukVIhrhSIC7+LmBPkkMoMuEJ1AfYBZfgNytdYqYREMuiyXWhYOMeZLBElTEAlJIZn7r2W3vqTIgjWlg==}
-
-  '@types/underscore@1.11.15':
-    resolution: {integrity: sha512-HP38xE+GuWGlbSRq9WrZkousaQ7dragtZCruBVMi0oX1migFZavZ3OROKHSkNp/9ouq82zrWtZpg18jFnVN96g==}
 
   '@types/uuid@9.0.7':
     resolution: {integrity: sha512-WUtIVRUZ9i5dYXefDEAI7sh9/O7jGvHg7Df/5O/gtH3Yabe5odI3UWopVR1qbPXQtvOxWu3mM4XxlYeZtMWF4g==}
@@ -5277,9 +5268,6 @@ packages:
   unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
 
-  underscore@1.13.6:
-    resolution: {integrity: sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==}
-
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
@@ -7446,8 +7434,6 @@ snapshots:
       '@types/webxr': 0.5.14
       fflate: 0.6.10
       meshoptimizer: 0.18.1
-
-  '@types/underscore@1.11.15': {}
 
   '@types/uuid@9.0.7': {}
 
@@ -11015,8 +11001,6 @@ snapshots:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
-
-  underscore@1.13.6: {}
 
   undici-types@5.26.5: {}
 
