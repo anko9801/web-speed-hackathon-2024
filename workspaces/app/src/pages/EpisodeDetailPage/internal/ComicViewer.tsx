@@ -31,6 +31,8 @@ type Props = {
   episodeId: string;
 };
 
+const clamp = (num, clamp, higher) => (higher ? Math.min(Math.max(num, clamp), higher) : Math.min(num, clamp));
+
 export const ComicViewer: React.FC<Props> = ({ episodeId }) => {
   // 画面のリサイズに合わせて再描画する
   const rerender = useUpdate();
@@ -48,7 +50,7 @@ export const ComicViewer: React.FC<Props> = ({ episodeId }) => {
   // 1ページの高さの候補
   const candidatePageHeight = (candidatePageWidth / IMAGE_WIDTH) * IMAGE_HEIGHT;
   // ビュアーの高さ
-  const viewerHeight = _.clamp(candidatePageHeight, MIN_VIEWER_HEIGHT, MAX_VIEWER_HEIGHT);
+  const viewerHeight = clamp(candidatePageHeight, MIN_VIEWER_HEIGHT, MAX_VIEWER_HEIGHT);
 
   return (
     <_Container ref={ref}>
