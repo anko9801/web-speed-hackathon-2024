@@ -4,6 +4,7 @@ import { OpenAPIHono } from '@hono/zod-openapi';
 import { authApp } from './auth';
 import { authorApp } from './authors';
 import { bookApp } from './books';
+import { constantApp } from './constants';
 import { episodePageApp } from './episodePages';
 import { episodeApp } from './episodes';
 import { featureApp } from './features';
@@ -31,6 +32,7 @@ app.get(
 app.route('/', authorApp);
 app.route('/', episodeApp);
 app.route('/', bookApp);
+app.route('/', constantApp);
 app.route('/', episodePageApp);
 app.route('/', imageApp);
 app.route('/', featureApp);
