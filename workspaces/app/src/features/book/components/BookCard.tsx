@@ -38,8 +38,8 @@ type Props = {
 };
 
 const BookCard: React.FC<Props> = ({ book }) => {
-  const imageUrl = useImage({ height: 128, imageId: book.image.id, width: 192 });
-  const authorImageUrl = useImage({ height: 32, imageId: book.author.image.id, width: 32 });
+  const imageUrl = `/images/${book.image.id}_192x272.avif`; // 128x192
+  const authorImageUrl = `/images/${book.author.image.id}_32x32.avif`;
 
   return (
     <_Wrapper href={`/books/${book.id}`}>

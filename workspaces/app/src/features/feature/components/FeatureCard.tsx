@@ -7,7 +7,6 @@ import { Flex } from '../../../foundation/components/Flex';
 import { Image } from '../../../foundation/components/Image';
 import { Link } from '../../../foundation/components/Link';
 import { Text } from '../../../foundation/components/Text';
-import { useImage } from '../../../foundation/hooks/useImage';
 import { Color, Radius, Space, Typography } from '../../../foundation/styles/variables';
 
 const _Wrapper = styled(Link)`
@@ -49,14 +48,14 @@ type Props = {
 };
 
 const FeatureCard: React.FC<Props> = ({ book }) => {
-  const imageUrl = useImage({ height: 96, imageId: book.image.id, width: 96 });
-  const authorImageUrl = useImage({ height: 32, imageId: book.author.image.id, width: 32 });
+  const imageUrl = `/images/${book.image.id}_96x136.avif`;
+  const authorImageUrl = `/images/${book.author.image.id}_32x32.avif`;
 
   return (
     <_Wrapper href={`/books/${book.id}`}>
       {imageUrl != null && (
         <_ImgWrapper>
-          <Image alt={book.image.alt} height={96} loading='lazy' objectFit="cover" src={imageUrl} width={96} />
+          <Image alt={book.image.alt} height={96} loading="lazy" objectFit="cover" src={imageUrl} width={96} />
         </_ImgWrapper>
       )}
 
@@ -71,7 +70,14 @@ const FeatureCard: React.FC<Props> = ({ book }) => {
         <Flex align="center" gap={Space * 1} justify="flex-end">
           {authorImageUrl != null && (
             <_AvatarWrapper>
-              <Image alt={book.author.name} height={32} loading='lazy' objectFit="cover" src={authorImageUrl} width={32}/>
+              <Image
+                alt={book.author.name}
+                height={32}
+                loading="lazy"
+                objectFit="cover"
+                src={authorImageUrl}
+                width={32}
+              />
             </_AvatarWrapper>
           )}
           <Text color={Color.MONO_100} typography={Typography.NORMAL14}>
