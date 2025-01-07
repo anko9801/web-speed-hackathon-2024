@@ -11,7 +11,6 @@ import { Spacer } from '../../../foundation/components/Spacer';
 import { Text } from '../../../foundation/components/Text';
 import { useImage } from '../../../foundation/hooks/useImage';
 import { Color, Radius, Space, Typography } from '../../../foundation/styles/variables';
-import { useEpisode } from '../hooks/useEpisode';
 
 const _Wrapper = styled.li`
   width: 100%;
